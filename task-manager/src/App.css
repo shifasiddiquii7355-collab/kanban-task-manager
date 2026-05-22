@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+ 
+}
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+.inputSection{
+  margin-bottom: 20px;
+}
+input {
+  padding: 8px;
+  margin-right: 10px;
+  background: #3a3a5a;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  background: #0d112e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width:55px;
+  box-shadow: 0.5px 0.5px 3px rgb(145, 110, 201);
+
+}
+.board{
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+}
+.column {
+  background: #2a2a40;
+  padding: 15px;
+  width: 30%;
+  min-height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  
+}
+.delBtn{
+  cursor: pointer;
+  height:40px;
+  width:40px;
+  float: right;
+  margin-left: auto;
+  box-shadow: 0.5px 0.5px 3px rgb(145, 110, 201);
+
+}
+.progressBtn{
+  width:auto;
+  height: 40px;
+  box-shadow: 0.5px 0.5px 3px rgb(145, 110, 201);
+
+}
+.doneBtn{
+  height:40px;
+  box-shadow: 0.5px 0.5px 3px rgb(145, 110, 201);
+}
+.dark{
+  background: #1e1e2f;
+  color: white;
+  min-height: 100vh;
+}
+
+.light{
+  background: linear-gradient(
+    to bottom right,
+    #f8fafc,
+    #e2e8f0
+  );
+  
+  color: #1f2937;
+  min-height: 100vh;
+}
+.themeSection{
+  margin-top: 30px;
+}
+
+.themeBtn{
+  width: auto;
+  
+  transition: all 0.3s ease;
+}
+.light .column{
+  background: #6f84aa;
+  color: #1f2937;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.taskCard{
+  background-color: #3b3b5b;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 15px;
+ width: 90%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.btnContainer{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.taskCard p{
+  margin: 0;
+  text-align: center;
+}
+.delBtn,
+.progressBtn,
+.doneBtn{
+  padding: 8px 12px;
+  font-size: 14px;
+}
+.priority{
+  font-size: 14px;
+  font-weight: bold;
+}
+.date{
+  font-size: 13px;
+  opacity: 0.8;
+}
+.editBtn{
+  background-color: orange;
+  border:none;
+  padding:5px 10px;
+  margin:5px;
+  border-radius:5px;
+  cursor:pointer;
+}
+.searchSection{
+  margin:20px;
+}
+
+.searchSection input{
+  padding:10px;
+  width:250px;
+  border-radius:8px;
+  border:none;
+}
+.dragHandle{
+  cursor: grab;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #6b7280;
+}
+.dragTop{
+  display: flex;
+  justify-content: flex-end;
+  width:100%;
+}
+.taskName{
+  font-size: 25px;
+}
+.light .taskCard{
+  background: white;
+  color: #1f2937;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border: 1px solid #eceff5;
+}
+.light input,
+.light select{
+  background: #6f84aa;
+  color: #222;
+  border: 1px solid #d1d5db;
+}
+.light input::placeholder{
+  color: #080808;
+}
+.App,
+.column,
+.taskCard,
+button,
+input{
+  transition: all 0.3s ease;
+}
+.light h1,
+.light h2{
+  color: #111827;
+}
+.taskCard:hover{
+  transform: translateY(-2px);
+}
+.cursor{
+  cursor: pointer;
+}
+.themeBtn:hover{
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+button{
+  transition: all 0.3s ease;
+}
